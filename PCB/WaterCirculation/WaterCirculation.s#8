@@ -8107,6 +8107,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="PUMPOUT" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 <part name="5VIN" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 <part name="12VIN" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="12VIN2" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="TEMP2A" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="TEMP2B" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="TEMP1A" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
+<part name="TEMP1B" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -8215,6 +8220,26 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="12VIN" gate="G$1" x="40.64" y="124.46" smashed="yes" rot="R270">
 <attribute name="VALUE" x="35.56" y="127" size="1.778" layer="96" rot="R270"/>
 <attribute name="NAME" x="46.482" y="127" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="12VIN2" gate="G$1" x="63.5" y="124.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="58.42" y="127" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="69.342" y="127" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="TEMP2A" gate="G$1" x="-22.86" y="104.14" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-27.94" y="106.68" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-17.018" y="106.68" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="TEMP2B" gate="G$1" x="-10.16" y="104.14" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-15.24" y="106.68" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-4.318" y="106.68" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="TEMP1A" gate="G$1" x="-63.5" y="104.14" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-68.58" y="106.68" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-57.658" y="106.68" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="TEMP1B" gate="G$1" x="-50.8" y="104.14" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-55.88" y="106.68" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="-44.958" y="106.68" size="1.778" layer="95" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -8344,6 +8369,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="17.78" y1="116.84" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
 <label x="17.78" y="111.76" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="12VIN2" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="116.84" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<label x="66.04" y="111.76" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -8412,6 +8442,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="40.64" y1="116.84" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
 <label x="40.64" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="12VIN2" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="116.84" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<label x="63.5" y="111.76" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -8469,6 +8504,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="PUMPOUT" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="96.52" x2="170.18" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="96.52" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="TEMP" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="48.26" y1="66.04" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="66.04" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<label x="53.34" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
