@@ -8115,6 +8115,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="4.7k"/>
 <part name="STATUSLED" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
+<part name="110INB" library="SparkFun-Connectors" deviceset="M02" device="3.5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -8255,6 +8256,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <instance part="R2" gate="G$1" x="-38.1" y="63.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="-34.29" y="62.0014" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-34.29" y="66.802" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="110INB" gate="G$1" x="134.62" y="124.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="129.54" y="127" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="140.462" y="127" size="1.778" layer="95" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -8531,10 +8536,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <net name="N$6" class="0">
 <segment>
 <pinref part="110IN" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="116.84" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="116.84" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="114.3" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="111.76" x2="172.72" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="PUMPOUT" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="111.76" x2="172.72" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="110INB" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="116.84" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
+<junction x="149.86" y="114.3"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8543,6 +8553,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="K3" gate="2" pin="S"/>
 <wire x1="147.32" y1="116.84" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="110INB" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="116.84" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="104.14" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
+<junction x="147.32" y="104.14"/>
 </segment>
 </net>
 <net name="N$11" class="0">

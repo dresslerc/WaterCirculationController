@@ -8094,7 +8094,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="K3" library="relay" deviceset="G5V1" device=""/>
 <part name="D3" library="diode" deviceset="DIODE-" device="SOD123"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="1k"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="Q3" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MPSA42" value="MPSA42"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -8173,7 +8173,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="NAME" x="150.9014" y="62.23" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="155.702" y="62.23" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED3" gate="G$1" x="152.4" y="55.88" smashed="yes">
+<instance part="LED2" gate="G$1" x="152.4" y="55.88" smashed="yes">
 <attribute name="NAME" x="155.956" y="51.308" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="158.115" y="51.308" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -8436,7 +8436,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="K3" gate="1" pin="2"/>
 <wire x1="160.02" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="53.34" x2="167.64" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="152.4" y1="50.8" x2="152.4" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
@@ -8450,7 +8450,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <net name="N$8" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="152.4" y1="60.96" x2="152.4" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
